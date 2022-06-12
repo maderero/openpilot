@@ -412,6 +412,7 @@ FW_VERSIONS = {
     (Ecu.srs, 0x18da53f1, None): [
       b'77959-TBA-A030\x00\x00',
       b'77959-TBA-A040\x00\x00',
+      b'77959-TBA-A060\x00\x00',
       b'77959-TBG-A030\x00\x00',
       b'77959-TEA-Q820\x00\x00',
     ],
