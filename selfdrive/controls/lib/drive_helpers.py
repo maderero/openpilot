@@ -75,7 +75,8 @@ def update_v_cruise(v_cruise_kph, v_ego, gas_pressed, buttonEvents, button_timer
 
     # If set is pressed while overriding, clip cruise speed to minimum of vEgo
     if gas_pressed and button_type in (ButtonType.decelCruise, ButtonType.setCruise):
-      v_cruise_kph = max(v_cruise_kph, v_ego * CV.MS_TO_KPH)
+      v_ego_override = int(round((float(v_ego * CV.MS_TO_KPH) * 0.6233 + 0.0995)))
+      v_cruise_kph = max(v_cruise_kph, v_ego_override)
 
     v_cruise_kph = clip(v_cruise_kph, V_CRUISE_MIN, V_CRUISE_MAX)
 
