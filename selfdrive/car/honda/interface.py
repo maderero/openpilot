@@ -71,10 +71,10 @@ class CarInterface(CarInterfaceBase):
       ret.longitudinalActuatorDelayUpperBound = 0.5 # s
     else:
       # default longitudinal tuning for all hondas
-      ret.longitudinalTuning.kpBP = [0.]
-      ret.longitudinalTuning.kpV = [1.]
-      ret.longitudinalTuning.kiBP = [0.]
-      ret.longitudinalTuning.kiV = [1.]
+      ret.longitudinalTuning.kpBP = [0]
+      ret.longitudinalTuning.kpV = [0]
+      ret.longitudinalTuning.kiBP = [0]
+      ret.longitudinalTuning.kiV = [0]
 
     eps_modified = True
 
