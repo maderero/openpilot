@@ -4,7 +4,7 @@ from common.realtime import DT_CTRL
 from selfdrive.controls.lib.drive_helpers import CONTROL_N
 from selfdrive.controls.lib.pid import PIDController
 from selfdrive.modeld.constants import T_IDXS
-from selfdrive.cars.honda.values import NIDEC_ACCEL_MIN, NIDEC_ACCEL_MAX
+from selfdrive.car.honda.values import NIDEC_ACCEL_MIN, NIDEC_ACCEL_MAX
 
 LongCtrlState = car.CarControl.Actuators.LongControlState
 
