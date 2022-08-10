@@ -4,12 +4,13 @@ from common.realtime import DT_CTRL
 from selfdrive.controls.lib.drive_helpers import CONTROL_N
 from selfdrive.controls.lib.pid import PIDController
 from selfdrive.modeld.constants import T_IDXS
+from selfdrive.cars.honda.values import NIDEC_ACCEL_MIN, NIDEC_ACCEL_MAX
 
 LongCtrlState = car.CarControl.Actuators.LongControlState
 
 # As per ISO 15622:2018 for all speeds
-ACCEL_MIN_ISO = -3.5  # m/s^2
-ACCEL_MAX_ISO = 2.0  # m/s^2
+ACCEL_MIN_ISO = NIDEC_ACCEL_MIN  # m/s^2
+ACCEL_MAX_ISO = NIDEC_ACCEL_MAX  # m/s^2
 
 
 def apply_deadzone(error, deadzone):
