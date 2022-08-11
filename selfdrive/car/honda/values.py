@@ -17,7 +17,7 @@ class CarControllerParams:
   # to apply some more braking if we're on a downhill slope.
   # Our controller should still keep the 2 second average above
   # -3.5 m/s^2 as per planner limits
-  NIDEC_ACCEL_MIN = -4.0  # m/s^2
+  NIDEC_ACCEL_MIN = -3.5  # m/s^2
   NIDEC_ACCEL_MAX = 3.2  # m/s^2, lower than 2.0 m/s^2 for tuning reasons
 
   NIDEC_MAX_ACCEL_V = [0.5, 2.4, 1.4, 0.6]
